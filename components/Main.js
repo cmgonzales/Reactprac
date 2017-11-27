@@ -1,7 +1,7 @@
 import React from 'react';
 import Testapp from './testApp.js';
-import Bar from './Navbar.js';
-import { Navbar } from 'reactstrap';
+import Bar from './nv.js';
+
 
 class Main extends React.Component {
     
