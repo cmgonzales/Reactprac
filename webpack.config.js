@@ -19,11 +19,11 @@ var config = {
         },
         {
         //adding jpg
-          test: /\.(png|jpg|gif)$/,
+          test: /\.png|jpg|gif$/,
           use: [
             {
               loader: 'file-loader',
-              options: {}  
+              options: {}
             }
           ]
         },

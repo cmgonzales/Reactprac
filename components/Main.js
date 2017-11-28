@@ -1,7 +1,8 @@
 import React from 'react';
-import Testapp from './testApp.js';
+import Mid from './mid.js';
 import Bar from './nv.js';
-
+import Bottom from './Bottom.js';
+import Style from './style.css'
 
 class Main extends React.Component {
     
@@ -9,8 +10,8 @@ class Main extends React.Component {
           return (
             <div>
                 <Bar/>  
-               <Testapp/>
-             
+               <Mid/>
+             <Bottom/>
              </div>
           );
        }
