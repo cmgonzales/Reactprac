@@ -1,4 +1,5 @@
 import React from 'react';
+import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import style from './style.css'
 
 
@@ -8,7 +9,13 @@ class Bottom extends React.Component {
           return (
             <div className ='bottom'>
                
-             <h1>hi</h1>
+            <Form className = 'form'>
+            <FormGroup className = 'field'>
+              <Label for="exampleEmail">Email</Label>
+              <Input type="email" name="email" id="exampleEmail" placeholder="Please enter email" />
+            </FormGroup>
+            </Form>
+            <Button color="primary">primary</Button>{' '}
              </div>
           );
        }
