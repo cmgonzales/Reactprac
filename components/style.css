@@ -8,7 +8,7 @@
 }
 img{
     width: 100%;
-    height: 600px;
+    height: 100%;
  
 }
 .bottom{
@@ -27,4 +27,7 @@ img{
 Button{
     margin-top:10px !important;
     margin-bottom: 20px !important;
+}
+.carosel{
+    height: 500px;
 }
