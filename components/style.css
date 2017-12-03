@@ -12,17 +12,19 @@ img{
  
 }
 .bottom{
-    background-color: black;
-    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(15, 15, 15);
+    
+   
 }
 .form{
     padding-top: 30px;
-    text-align: center;
+
 
 }
 .field{
     width: 30%;
-    margin: 0 auto;
+    
 }
 Button{
     margin-top:10px !important;
@@ -30,4 +32,26 @@ Button{
 }
 .carosel{
     height: 500px;
+    
+}
+.row{
+    background-color: black !important;
+}
+
+.container{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+p{
+    color: white;
+    font-size: 15px;
+    padding-top: 8px;
+}
+span{
+    font-size: 10px;
+    color: rgb(77, 77, 77);
+}
+h3{
+    color: white;
+    font-family: cursive;
 }

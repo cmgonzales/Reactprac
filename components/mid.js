@@ -1,9 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'react-bootstrap-carousel/dist/react-bootstrap-carousel.css';
 import {React_Bootstrap_Carousel} from 'react-bootstrap-carousel';
 import style from './style.css';
+import { Container, Row, Col } from 'reactstrap';
 
 class mid extends React.Component {
     constructor(props) {
@@ -19,7 +19,9 @@ class mid extends React.Component {
     slidePrev=()=>{
       this.slider.slidePrev();
     }
-  
+    goToSlide=()=>{
+      this.slider.goToSlide(3);
+    }
     _changeIcon=()=>{
       let {leftIcon,rightIcon}=this.state;
       if(leftIcon && rightIcon){
@@ -43,7 +45,7 @@ class mid extends React.Component {
             <div className="col-md-12">
               <React_Bootstrap_Carousel
                 animation={true}
-                slideshowSpeed={7000}
+                slideshowSpeed={4000}
                 leftIcon={leftIcon}
                 rightIcon={rightIcon}
                 onSelect={this.onSelect}
@@ -71,7 +73,24 @@ class mid extends React.Component {
                 
                 
               </React_Bootstrap_Carousel>
-            </div>
+            
+          </div>
+          <Container className = 'container'>
+          <Row>
+          <Col xs="6">
+          <img src = {require('./quote.jpg')}/>
+          </Col>
+          <Col xs="6">
+          <p>Nature's peace will flow into you as sunshine flows into trees. The winds will blow their own freshness into you, and the storms their energy, while cares will drop away from you like the leaves of Autumn.” “The sea is emotion incarnate. It loves, hates, and weeps.</p>
+          <span>-unknown</span>
+          <p>Of all the plants that cover the earth and lie like a fringe of hair upon the body of our grandmother, try to obtain knowledge that you may be strengthened in life.    </p>
+          <span>Winnebago (Native American) (on nature)</span>
+          <p>There is pleasure in the pathless woods, there is rapture in the lonely shore, there is society where none intrudes, by the deep sea, and music in its roar; I love not Man the less, but Nature more.</p>
+          <span>Lord Byron</span>
+          </Col>
+        
+          </Row>
+          </Container>
           </div>
         </div>
       );
