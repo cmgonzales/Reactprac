@@ -3,13 +3,17 @@ import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 import style from './style.css'
 
 
+function submit(){
+  console.log('test');
+}
+
 class Bottom extends React.Component {
     
        render() {
           return (
             <div className ='bottom'>
             
-            <h3>Get daily quotes</h3>
+            <h3>Get daily quote</h3>
              
                
             <Form className = 'form'>
@@ -18,7 +22,7 @@ class Bottom extends React.Component {
               <Input type="email" name="email" id="exampleEmail" placeholder="Please enter email" />
             </FormGroup>
             </Form>
-            <Button color="primary">Submit</Button>{' '}
+            <Button color="primary" onClick = {submit}>Submit</Button>{' '}
              </div>
           );
        }
