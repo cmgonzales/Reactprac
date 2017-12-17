@@ -6,7 +6,7 @@ var config = {
   },
   devServer: {
      inline: true, //this allows our changes to take place immediately without refreshing
-     port: 9090 //the port where our app will be served from
+     port: 3000 //the port where our app will be served from
   },
   module: {
       loaders: [

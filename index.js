@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import 'bootstrap/dist/css/bootstrap.css';
-import Style from 'style-loader';
-import File from 'file-loader';
+
 
 
 
