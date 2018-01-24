@@ -95,5 +95,6 @@ class mid extends React.Component {
         </div>
       );
     }
+
 };
 export default mid;

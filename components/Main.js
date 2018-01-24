@@ -3,6 +3,7 @@ import Mid from './mid.js';
 import Bar from './nv.js';
 import Bottom from './Bottom.js';
 import Style from './style.css'
+import Create from './create.js'
 
 class Main extends React.Component {
     
@@ -12,6 +13,7 @@ class Main extends React.Component {
                 <Bar/>  
                <Mid/>
              <Bottom/>
+            <create/>             
              </div>
           );
        }
